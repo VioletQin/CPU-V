@@ -7,6 +7,7 @@ import java.io.IOException;
 public class TestCMD {
     public static void main(String[] args) throws IOException {
         Runtime run = Runtime.getRuntime();
-        run.exec("cmd /c taskmgr");
+//        run.exec("cmd /c taskmgr");
+        run.exec("cmd /c C:\\Windows\\System32\\taskmgr.exe");
     }
 }
