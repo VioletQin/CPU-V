@@ -17,12 +17,15 @@ public class Demo {
         System.out.println("Initializing System...");
         SystemInfo si = new SystemInfo();
         HardwareAbstractionLayer hal = si.getHardware();
+        CentralProcessor processor = hal.getProcessor();
 
         System.out.println("Checking Processor...");
-        printProcessor(hal.getProcessor());
+        printProcessor(processor);
 
         System.out.println("Checking CPU...");
-        printCpu(hal.getProcessor());
+        printCpu(processor);
+
+        System.out.println("三级缓存:");
 
     }
 

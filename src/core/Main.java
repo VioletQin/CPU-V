@@ -1,4 +1,8 @@
 package core;
+import core.utils.ProcessorInfo;
+import oshi.SystemInfo;
+
+import java.util.Arrays;
 
 /**
  * @author violetqin
@@ -8,7 +12,8 @@ package core;
 public class Main {
 
     public static void main(String[] args) {
-
+        ProcessorInfo processorInfo = ProcessorInfo.getProcessorInfo();
+        processorInfo.getFreqInfo();
     }
 
 }
