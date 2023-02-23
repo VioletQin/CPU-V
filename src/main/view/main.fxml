@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1014.0" prefWidth="748.0" style="-fx-background-color: #121a24; -fx-background-radius: 15px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.controller.MainController">
+   <children>
+      <Pane layoutX="31.0" layoutY="64.0" prefHeight="926.0" prefWidth="687.0" style="-fx-background-color: #1e2736; -fx-background-radius: 20px;">
+         <children>
+            <Pane layoutX="38.0" layoutY="24.0" prefHeight="308.0" prefWidth="611.0" style="-fx-border-color: #121a24; -fx-border-radius: 20px; -fx-border-width: 5px;">
+               <children>
+                  <Label layoutX="24.0" layoutY="39.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="处理器编号" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="78.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="规格" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="id" layoutX="131.0" layoutY="39.0" prefHeight="36.0" prefWidth="452.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label fx:id="name" layoutX="131.0" layoutY="78.0" prefHeight="36.0" prefWidth="452.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+                  <Label fx:id="vendorFreq" layoutX="431.0" layoutY="124.0" prefHeight="36.0" prefWidth="152.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="324.0" layoutY="124.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="基准速度" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="physicalPackageCount" layoutX="431.0" layoutY="167.0" prefHeight="36.0" prefWidth="152.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="324.0" layoutY="167.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="插槽" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="physicalProcessorCount" layoutX="431.0" layoutY="210.0" prefHeight="36.0" prefWidth="152.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="324.0" layoutY="210.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="内核" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="logicalProcessorCount" layoutX="431.0" layoutY="253.0" prefHeight="36.0" prefWidth="152.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="324.0" layoutY="253.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="逻辑处理器" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="family" layoutX="131.0" layoutY="124.0" prefHeight="36.0" prefWidth="152.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="124.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="系列" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit" layoutX="131.0" layoutY="167.0" prefHeight="36.0" prefWidth="152.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="167.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="位数" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="vendor" layoutX="131.0" layoutY="210.0" prefHeight="36.0" prefWidth="152.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="210.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="供应商信息" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="-20.0" prefHeight="41.0" prefWidth="61.0" style="-fx-background-color: #1e2736;" text="处理器" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="utilizationModule" layoutX="38.0" layoutY="353.0" prefHeight="328.0" prefWidth="611.0" style="-fx-background-color: #1e2736; -fx-border-color: #121a24; -fx-border-radius: 20px; -fx-border-width: 5px;">
+               <children>
+                  <Label layoutX="35.0" layoutY="-20.0" prefHeight="41.0" prefWidth="77.0" style="-fx-background-color: #1e2736;" text="\%利用率" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="38.0" layoutY="703.0" prefHeight="205.0" prefWidth="611.0" style="-fx-background-color: #1e2736; -fx-border-color: #121a24; -fx-border-radius: 20px; -fx-border-width: 5px;">
+               <children>
+                  <Label layoutX="35.0" layoutY="-20.0" prefHeight="41.0" prefWidth="44.0" style="-fx-background-color: #1e2736;" text="详情" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalCpu" layoutX="121.0" layoutY="21.0" prefHeight="36.0" prefWidth="166.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="21.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="总利用率" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idle" layoutX="121.0" layoutY="66.0" prefHeight="36.0" prefWidth="166.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="66.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="总空闲率" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="user" layoutX="413.0" layoutY="21.0" prefHeight="36.0" prefWidth="166.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="306.0" layoutY="21.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="用户占用" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="system" layoutX="413.0" layoutY="66.0" prefHeight="36.0" prefWidth="166.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="306.0" layoutY="66.0" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="系统占用" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="contextSwitches" layoutX="159.0" layoutY="111.0" prefHeight="36.0" prefWidth="419.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="111.0" prefHeight="36.0" prefWidth="115.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="上下文切换数" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="interrupts" layoutX="159.0" layoutY="155.0" prefHeight="36.0" prefWidth="419.0" style="-fx-border-color: #121a24; -fx-background-color: #1e2736; -fx-border-radius: 10px; -fx-border-width: 3px; -fx-alignment: center;" textFill="#6462f3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="155.0" prefHeight="36.0" prefWidth="61.0" style="-fx-background-color: #1e2736; -fx-alignment: center_right;" text="中断数" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft YaHei Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane fx:id="topStage" prefHeight="60.0" prefWidth="748.0" style="-fx-background-color: #121a24; -fx-background-radius: 15px;">
+         <children>
+            <ImageView fx:id="closeButton" fitHeight="30.0" fitWidth="30.0" layoutX="693.0" layoutY="14.0" onMouseClicked="#onClose" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+            <ImageView fx:id="minimizeButton" fitHeight="30.0" fitWidth="30.0" layoutX="648.0" layoutY="14.0" onMouseClicked="#onMinimize" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+            <ImageView fx:id="icon" fitHeight="30.0" fitWidth="30.0" layoutX="25.0" layoutY="14.0" onMouseClicked="#onMinimize" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="67.0" layoutY="15.0" prefHeight="28.0" prefWidth="61.0" text="CPU-V" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft YaHei" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

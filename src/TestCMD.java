@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.text.DecimalFormat;
 
 /**
  * @author VioletQin
@@ -6,8 +7,7 @@ import java.io.IOException;
  */
 public class TestCMD {
     public static void main(String[] args) throws IOException {
-        Runtime run = Runtime.getRuntime();
-//        run.exec("cmd /c taskmgr");
-        run.exec("cmd /c C:\\Windows\\System32\\taskmgr.exe");
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        System.out.println(decimalFormat.format(31.145f));
     }
 }

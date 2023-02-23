@@ -1,9 +1,8 @@
-package core.utils;
+package main.core;
 
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,6 +23,11 @@ public class ProcessorInfo {
     //获取工具类
     public static ProcessorInfo getProcessorInfo() {
         return processorInfo;
+    }
+
+    //获取cpu
+    public CentralProcessor getCpu() {
+        return this.cpu;
     }
 
     //插槽(封装的CPU)的个数
@@ -66,26 +70,8 @@ public class ProcessorInfo {
         return cpu.getProcessorIdentifier().isCpu64bit();
     }
 
-    //单个cpu核心睿频 单位Hz
+    //单个cpu核心基准频率 单位Hz
     public long getVendorFreq() {
         return cpu.getProcessorIdentifier().getVendorFreq();
-    }
-
-    //返回缓存信息
-    public List<CentralProcessor.ProcessorCache> getProcessorCaches() {
-        /*
-          等级  level : byte ;
-          缓存大小  cacheSize : int ; in bytes
-          缓存类型  type : Type ;
-          路数 associativity : byte ;
-          行大小 lineSize : short ;
-         */
-        return cpu.getProcessorCaches();
-    }
-
-    //测试
-    public void getFreqInfo() {
-        System.out.println("当前频率:" + Arrays.toString(cpu.getCurrentFreq()));
-        System.out.println("最大频率:" + cpu.getMaxFreq());
     }
 }
