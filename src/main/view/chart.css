@@ -8,7 +8,11 @@
     -fx-stroke: rgba(183, 183, 183, 0.6);
 }
 .chart-alternative-row-fill {
-    -fx-fill: #2e3c52;
+    -fx-fill: #1e2736;
     -fx-stroke: transparent;
     -fx-stroke-width: 0;
+}
+
+.chart-series-line.default-color0 {
+    -fx-stroke: rgb(116, 115, 236);
 }

@@ -2,6 +2,7 @@ package main.view.controller;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.control.Label;
@@ -11,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
+import main.core.CpuLineChart;
 import main.core.ProcessorInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.hardware.CentralProcessor.TickType;
@@ -124,7 +126,10 @@ public class MainController {
     private Label interrupts;
     //对应量值
     long[] prevTicks;
+    //输出格式
     DecimalFormat format = new DecimalFormat("#.##");
+    //折线图
+    private CpuLineChart cpuLineChart;
 
     private void pollingTick() {
         long[] ticks = cpu.getSystemCpuLoadTicks();
@@ -138,8 +143,12 @@ public class MainController {
         long steal = ticks[TickType.STEAL.getIndex()] - prevTicks[TickType.STEAL.getIndex()];
         long totalCpu_ = user_ + nice + sys + idle_ + iowait + irq + softirq + steal;
 
+        double info = cpu.getSystemCpuLoadBetweenTicks(prevTicks) * 100;
+        //折线图添加数据
+        cpuLineChart.add(info);
+
         //处理逻辑
-        totalCpu.setText(format.format(cpu.getSystemCpuLoadBetweenTicks(prevTicks) * 100) + "%");
+        totalCpu.setText(format.format(info) + "%");
         idle.setText(format.format(100d * idle_ / totalCpu_) + "%");
         system.setText(format.format(100d * sys / totalCpu_) + "%");
         user.setText(format.format(100d * user_ / totalCpu_) + "%");
@@ -189,15 +198,22 @@ public class MainController {
         //折线图初始化
         NumberAxis x = new NumberAxis(0, 60, 10);
         x.setTickLabelFill(Paint.valueOf("#ffffff"));
-        NumberAxis y = new NumberAxis(0,100.0,10);
+        NumberAxis y = new NumberAxis(0,100.0,20);
         y.setTickLabelFill(Paint.valueOf("#ffffff"));
-        LineChart<Number, Number> lineChart = new LineChart<Number, Number>(x,y);
+        LineChart<Number, Number> areaChart = new LineChart<Number, Number>(x,y);
         //折线图布局
-        lineChart.setLayoutX(5.0);
-        lineChart.setLayoutY(10.0);
-        lineChart.setPrefHeight(323.0);
-        lineChart.setPrefWidth(584.0);
-        utilizationModule.getChildren().add(lineChart);
+        areaChart.setLayoutX(5.0);
+        areaChart.setLayoutY(10.0);
+        areaChart.setPrefHeight(279.0);
+        areaChart.setPrefWidth(1088.0);
+
+        //面积图样式
+        areaChart.setCreateSymbols(false);
+        areaChart.setLegendVisible(false);
+
+        //布局添加折线图
+        this.cpuLineChart = new CpuLineChart(areaChart);
+        utilizationModule.getChildren().add(this.cpuLineChart.getLineChart());
 
         //监听CPU实时利用率定时任务
         Timer timer = new Timer();
