@@ -3,7 +3,7 @@
 
 这个软件是我大三一个课程设计的作品，使用JDK8 和 JavaFX制作,仿照 CPU-Z 和 Windows的任务管理器搞的CPU参数监控程序。
 
-![image-20230224173132178](README.assets/image-20230224173132178.png)
+![image-20230224173132178](https://github.com/VioletQin/OSCourseDesign/blob/main/image-20230224173132178.png)
 
 
 
