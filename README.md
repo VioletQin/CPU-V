@@ -2,8 +2,9 @@
 ## 1、介绍
 
 这个软件是我大三一个课程设计的作品，使用JDK8 和 JavaFX制作,仿照 CPU-Z 和 Windows的任务管理器搞的CPU参数监控程序。
+感觉很有趣所以就写了来玩。
 
-![image-20230224173132178](https://github.com/VioletQin/OSCourseDesign/blob/main/image-20230224173132178.png)
+![image](https://github.com/VioletQin/OSCourseDesign/blob/main/image-20230224173132178.png)
 
 
 
