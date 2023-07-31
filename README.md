@@ -1,4 +1,4 @@
-# OSCourseDesign
+# CPU-V
 ## 1、介绍
 
 这个软件是我大三一个课程设计的作品，使用JDK8 和 JavaFX制作,仿照 CPU-Z 和 Windows的任务管理器搞的CPU参数监控程序。
